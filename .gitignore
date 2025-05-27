@@ -39,6 +39,7 @@ client_secret*.json
 *.json
 *.pem
 *.key
+setup_credentials.sh
 
 # Media files
 assets/audio/*.mp3
