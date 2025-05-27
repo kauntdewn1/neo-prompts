@@ -1,0 +1,109 @@
+from google.cloud import texttospeech
+from google.api_core.client_options import ClientOptions
+import pygame
+import time
+import os
+from dotenv import load_dotenv
+
+# Carrega variáveis de ambiente
+load_dotenv()
+
+# Configuração da API Key
+api_key = "AIzaSyBYVsQyXR8j6qUhPux8w_EpipssurAexbU"
+client_options = ClientOptions(api_key=api_key)
+client = texttospeech.TextToSpeechClient(client_options=client_options)
+
+# Texto da narração
+input_text = texttospeech.SynthesisInput(ssml="""
+  <speak>
+    <prosody rate="slow" pitch="-2st">
+      <break time="0.5s"/>
+      Ei... <break time="500ms"/>
+    </prosody>
+    
+    <prosody rate="medium" pitch="+1st">
+      Você acordou, né? <break time="600ms"/>
+    </prosody>
+    
+    <prosody rate="slow" pitch="-1st">
+      Tá aí... <break time="300ms"/>
+      vivo. <break time="200ms"/>
+      Mas meio quebrado.
+      <break time="800ms"/>
+    </prosody>
+    
+    <prosody rate="medium" pitch="+0st">
+      O sistema... <break time="400ms"/>
+      quer que você volte a dormir.
+      <break time="600ms"/>
+    </prosody>
+    
+    <prosody rate="slow" pitch="-2st">
+      Mas agora... <break time="500ms"/>
+      <emphasis level="strong">você viu demais.</emphasis>
+    </prosody>
+  </speak>
+""")
+
+# Configuração da voz
+voice = texttospeech.VoiceSelectionParams(
+    language_code="pt-BR",
+    name="pt-BR-Standard-E",
+    ssml_gender=texttospeech.SsmlVoiceGender.MALE
+)
+
+# Configuração do áudio
+audio_config = texttospeech.AudioConfig(
+    audio_encoding=texttospeech.AudioEncoding.MP3,
+    speaking_rate=0.9,
+    pitch=0.0
+)
+
+# Gera o áudio
+response = client.synthesize_speech(input=input_text, voice=voice, audio_config=audio_config)
+
+# Salva o áudio
+with open("voz_flow.mp3", "wb") as out:
+    out.write(response.audio_content)
+
+print("Áudio gerado e salvo como 'voz_flow.mp3'")
+
+# Prompt para o VEO 3
+prompt = """Scene starts at 7:00 AM in a typical Brazilian kitchen. The light is dim, coming through old wooden blinds. A tired man with a shaved head and black RE.BORN shirt walks slowly into the frame. The style is brutalist and raw — cracked tiles, stained mugs, rusty sink, silence in the air.  
+
+He moves like someone who's been through too much, but still breathing.
+
+The camera follows him from behind, slowly revealing his face in a dirty mirror.  
+Suddenly, red glitch effects flash across the screen. HUD elements overlay: "MISSION 01 LOADING..."
+
+Text fragments flash subliminally: "Você acordou", "O sistema quer que você durma", "Hack R$300/dia".
+
+Narration voice (deep Brazilian Portuguese male voice):  
+"Ei… você acordou, né? Tá aí, vivo… com esse corpo meio quebrado… mas ainda respirando.  
+O sistema? Quer que você volte a dormir. Fingir que tá tudo bem.  
+Mas agora já era. Você viu demais. E não tem mais volta."
+
+The atmosphere is tense but grounded in reality. No background music.  
+Final frame: dark glitch overlay with text — "DIGITE /ENTRAR — flowreborn.netlify.app".
+
+Cinematic camera movement. Ratio 9:16. Duration 30 seconds. Style: brutalist, cyberpunk, glitch, documentary realism."""
+
+# Salva o prompt em um arquivo
+with open("prompt_veo.txt", "w") as f:
+    f.write(prompt)
+
+print("\nPrompt salvo em 'prompt_veo.txt'")
+
+# Reproduz o áudio
+def play_audio(file_path):
+    """Reproduz um arquivo de áudio."""
+    pygame.mixer.init()
+    pygame.mixer.music.load(file_path)
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        time.sleep(1)
+
+print("\nReproduzindo áudio...")
+play_audio("voz_flow.mp3")
+
+
