@@ -104,3 +104,7 @@ generate-prompt:
 
 batch-prompts:
 	python scripts/prompt_manager.py batch --category projects
+
+# Analyze code quality
+analyze-code:
+	python scripts/code_analysis.py

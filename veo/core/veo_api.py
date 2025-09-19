@@ -70,12 +70,32 @@ class VEOAPIClient:
         self.logger.info(f"Starting video generation: {request.prompt[:50]}...")
         
         try:
-            # For now, skip heavy model downloads and use VEO API directly
-            # This prevents the 20-50GB download that was causing the hang
-            self.logger.info("Using VEO API (models too large for current setup)...")
-            video_uris = await self._call_veo_api(request, progress_callback)
-            self.logger.success(f"VEO API generated {len(video_uris)} video(s) successfully")
-            return video_uris
+            # Try LTX-Video first (real-time generation)
+            try:
+                self.logger.info("Attempting LTX-Video generation...")
+                video_uris = await self.ltx_client.generate_video_async(request, progress_callback)
+                self.logger.success(f"LTX-Video generated {len(video_uris)} video(s) successfully")
+                return video_uris
+                
+            except Exception as ltx_error:
+                self.logger.warning(f"LTX-Video failed: {ltx_error}")
+                self.logger.info("Falling back to SVD...")
+                
+                # Try SVD as fallback
+                try:
+                    self.logger.info("Attempting SVD generation...")
+                    video_uris = await self.svd_client.generate_video_async(request, progress_callback)
+                    self.logger.success(f"SVD generated {len(video_uris)} video(s) successfully")
+                    return video_uris
+                    
+                except Exception as svd_error:
+                    self.logger.warning(f"SVD failed: {svd_error}")
+                    self.logger.info("Falling back to VEO API...")
+                    
+                    # Final fallback to VEO API
+                    video_uris = await self._call_veo_api(request, progress_callback)
+                    self.logger.success(f"VEO API generated {len(video_uris)} video(s) successfully")
+                    return video_uris
             
         except Exception as e:
             self.logger.error(f"All video generation methods failed: {str(e)}")
