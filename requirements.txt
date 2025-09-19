@@ -4,6 +4,18 @@ google-cloud-aiplatform>=1.38.0
 python-dotenv>=1.0.0
 Pillow>=10.0.0
 
+# LTX-Video dependencies
+ltx-video>=0.1.2
+torch>=2.1.0
+torchvision>=0.16.0
+diffusers>=0.28.2
+transformers>=4.47.2
+accelerate>=0.20.0
+opencv-python>=4.8.0
+imageio>=2.37.0
+imageio-ffmpeg>=0.6.0
+av>=15.1.0
+
 # Async and performance
 aiofiles>=23.0.0
 asyncio-throttle>=1.0.0
