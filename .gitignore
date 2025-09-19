@@ -1,11 +1,26 @@
-# Environment variables
+# Arquivos sensíveis
 .env
+*.key
+*.pem
+*.p12
+*.json
+client_secret_*.json
+credentials.json
+
+# Logs
+*.log
+logs/
+
+# Outputs
+output/
+venv/
+env/
 
 # Python
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
+*.pyc
+*.pyo
+*.pyd
 .Python
 build/
 develop-eggs/
@@ -23,44 +38,12 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
-venv/
-ENV/
-
 # IDE
-.idea/
 .vscode/
+.idea/
 *.swp
 *.swo
-.ipynb_checkpoints/
-
-# Credentials
-client_secret*.json
-*.json
-*.pem
-*.key
-setup_credentials.sh
-
-# Media files
-assets/audio/*.mp3
-assets/video/*.mp4
-!assets/audio/voz_flow.mp3
-!assets/video/*.mp4
-
-# Logs
-*.log
-logs/
 
 # OS
 .DS_Store
 Thumbs.db
-
-# Output files
-output/
-*.mp4
-
-# Input files
-input/
-*.png
-*.jpg
-*.jpeg 

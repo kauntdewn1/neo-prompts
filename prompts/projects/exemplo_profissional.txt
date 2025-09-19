@@ -1,0 +1,65 @@
+Título/Tipo de Vídeo: Vídeo ultrarrealista, close-up médio, qualidade cinematográfica profissional, com áudio em português do Brasil.
+
+Cena Geral:
+
+Ambiente interno de uma cozinha moderna e elegante, com iluminação natural suave vinda de uma janela grande ao fundo. A cozinha possui bancadas em mármore branco, eletrodomésticos de aço inox e uma iluminação de destaque indireta em tom dourado vinda de spots no teto, criando um ambiente acolhedor e sofisticado. O fundo deve ter um desfoque de profundidade (bokeh) suave, mas que ainda permita a percepção do ambiente doméstico, garantindo que toda a atenção visual esteja na pessoa e, principalmente, no produto que ela está apresentando.
+
+Personagem (Definido):
+
+Gênero: Feminino.
+
+Idade Aparente: 32 anos.
+
+Etnia/Cor da Pele: Brasileira, parda clara.
+
+Textura da Pele: Realista, com poros visíveis sutilmente, sem imperfeições exageradas, aspecto saudável e bem cuidado. Um leve brilho natural na zona T, indicando pele real.
+
+Cabelo: Cabelo castanho escuro, longo até os ombros, com ondas naturais e bem penteadas, talvez com um leve brilho de produto finalizador discreto. Sem fios rebeldes.
+
+Olhos: Verdes, expressivos e cativantes.
+
+Roupa: Blusa de seda creme, de tecido de alta qualidade, perfeitamente passada, com as mangas levemente dobradas até o antebraço de forma casual e elegante. Acessórios discretos: brincos pequenos de ouro e um colar delicado.
+
+Expressão e Postura: Expressão facial de confiança serena e satisfação genuína. Um sorriso leve e natural, transmitindo felicidade e orgulho. Olha diretamente para a câmera, estabelecendo contato visual com o espectador. Postura relaxada mas elegante, ombros levemente para trás, transmitindo conforto e segurança.
+
+Elemento Visual do Produto:
+
+A pessoa está posicionada à frente de uma bancada de cozinha com um produto de limpeza premium ao centro, com embalagem elegante e design moderno. O produto deve estar bem iluminado e em destaque.
+
+Descrição do PRODUTO:
+
+Marca: "CLEAN PRO" em azul escuro, fonte sans-serif bold, caixa alta.
+
+"LIMPEZA PROFISSIONAL" em azul escuro, fonte leve e elegante, caixa alta, menor tamanho e maior espaçamento.
+
+Ação e Diálogo (COM ÁUDIO PRECISO):
+
+A pessoa, após um breve momento olhando para a câmera com a expressão descrita, começa a falar:
+
+Fala: "Limpeza que você pode confiar. Resultados que você pode ver." (Não é necessário legenda)
+
+Áudio: Voz feminina clara, em tom médio, com excelente dicção em português do Brasil (sotaque neutro/sudeste, se possível). A fala deve ser pausada, confiante e com convicção, como quem compartilha uma solução comprovada.
+
+Sincronia Labial: Perfeita e natural. Movimentos da boca devem corresponder exatamente aos fonemas da fala.
+
+Respiração: Leves e naturais pausas para respiração entre as frases ou palavras-chave, adicionando realismo.
+
+Detalhes Adicionais de Realismo e Atmosfera:
+
+Iluminação da Cena: Iluminação natural suave combinada com iluminação de estúdio profissional. Uma luz principal suave (softbox) vinda da frente e ligeiramente da lateral (key light) para iluminar o personagem. Uma luz de preenchimento (fill light) mais fraca para suavizar sombras. Luzes de recorte (rim lights) sutis em tons de dourado para destacar os contornos do personagem e separá-lo do fundo.
+
+Movimento da Câmera: Câmera estática, sem movimentos, para manter o foco absoluto na pessoa e no produto.
+
+Movimentos da Pessoa: Movimentos corporais mínimos e naturais enquanto fala: leves movimentos de cabeça para ênfase, microexpressões faciais que acompanham o tom da fala (ex: leve levantar de sobrancelhas ao expressar convicção). O movimento do peito ao respirar deve ser sutil.
+
+Qualidade Técnica: Resolução 4K. Áudio limpo, com a voz em primeiro plano, sem ruídos de fundo ou reverberação excessiva. Taxa de quadros de 24 ou 30fps para um look cinematográfico.
+
+Instruções Explícitas Adicionais para o Modelo de Vídeo:
+
+Áudio e Sincronia Labial: A fala deve ser clara, no tom descrito, e a sincronia labial, perfeita.
+
+Iluminação para Reflexos e Destaques: A iluminação da cena deve reforçar os contornos e profundidade do ambiente e do produto.
+
+Foco nos Detalhes do Personagem: Seguir as definições de gênero, idade, etnia, vestimenta e expressão para consistência.
+
+Realismo Extremo: O objetivo é um vídeo que pareça uma gravação real de alta qualidade.

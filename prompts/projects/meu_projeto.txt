@@ -1,0 +1,22 @@
+# Meu Projeto - Prompts
+
+## Prompt 1: Cena de Ação
+Um gato preto elegante corre pelas ruas de uma cidade cyberpunk à noite. Luzes de neon refletem em seus olhos brilhantes enquanto ele salta entre telhados e corrimões. A câmera segue o movimento fluido do gato com uma câmera dinâmica e cinematográfica.
+
+Estilo: Blade Runner meets Studio Ghibli
+Duração: 8 segundos
+Proporção: 16:9
+
+## Prompt 2: Cena Romântica
+Dois pombos dançam no ar sobre uma praça ensolarada. A câmera gira lentamente ao redor deles, capturando cada movimento gracioso. Pétalas de flores caem suavemente ao fundo, criando um ambiente romântico e poético.
+
+Estilo: Filme francês, cores pastel
+Duração: 8 segundos
+Proporção: 9:16
+
+## Prompt 3: Cena de Suspense
+Uma porta antiga e pesada se abre lentamente, revelando um corredor escuro e misterioso. A câmera se move cautelosamente para dentro, com sombras dançando nas paredes. O suspense é construído através do movimento lento e da iluminação dramática.
+
+Estilo: Hitchcock, film noir
+Duração: 8 segundos
+Proporção: 16:9

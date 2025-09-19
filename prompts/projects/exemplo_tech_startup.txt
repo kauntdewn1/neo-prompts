@@ -1,0 +1,65 @@
+Título/Tipo de Vídeo: Vídeo ultrarrealista, close-up médio, qualidade cinematográfica profissional, com áudio em português do Brasil.
+
+Cena Geral:
+
+Ambiente interno de um escritório tech moderno e minimalista, com iluminação LED azul suave vinda de painéis nas paredes. O escritório possui mesas de vidro, cadeiras ergonômicas de design futurista e uma iluminação de destaque indireta em tom ciano vinda de spots no teto, criando um ambiente tecnológico e inovador. O fundo deve ter um desfoque de profundidade (bokeh) suave, mas que ainda permita a percepção do ambiente tech, garantindo que toda a atenção visual esteja na pessoa e, principalmente, no laptop que ela está apresentando.
+
+Personagem (Definido):
+
+Gênero: Masculino.
+
+Idade Aparente: 28 anos.
+
+Etnia/Cor da Pele: Brasileiro, branco.
+
+Textura da Pele: Realista, com poros visíveis sutilmente, sem imperfeições exageradas, aspecto saudável e bem cuidado. Um leve brilho natural na zona T, indicando pele real.
+
+Cabelo: Cabelo castanho claro, curto, com corte moderno e despojado, talvez com um leve brilho de produto finalizador discreto. Sem fios rebeldes.
+
+Olhos: Azuis, expressivos e inteligentes.
+
+Roupa: Camiseta polo azul escura, de tecido de alta qualidade, perfeitamente passada, com as mangas levemente dobradas até o antebraço de forma casual e elegante. Acessórios discretos: relógio smartwatch e óculos de grau com armação moderna.
+
+Expressão e Postura: Expressão facial de confiança serena e inovação genuína. Um sorriso leve e inteligente, transmitindo conhecimento e entusiasmo. Olha diretamente para a câmera, estabelecendo contato visual com o espectador. Postura relaxada mas focada, ombros levemente para trás, transmitindo expertise e segurança.
+
+Elemento Visual do Produto:
+
+A pessoa está posicionada à frente de uma mesa de vidro com um laptop premium ao centro, com tela brilhante e design moderno. O laptop deve estar bem iluminado e em destaque, mostrando uma interface de software inovador.
+
+Descrição do PRODUTO:
+
+Marca: "TECHNOVATE" em azul ciano, fonte sans-serif bold, caixa alta.
+
+"SOLUÇÕES INTELIGENTES" em azul ciano, fonte leve e elegante, caixa alta, menor tamanho e maior espaçamento.
+
+Ação e Diálogo (COM ÁUDIO PRECISO):
+
+A pessoa, após um breve momento olhando para a câmera com a expressão descrita, começa a falar:
+
+Fala: "Tecnologia que transforma. Resultados que impressionam." (Não é necessário legenda)
+
+Áudio: Voz masculina clara, em tom médio-grave, com excelente dicção em português do Brasil (sotaque neutro/sudeste, se possível). A fala deve ser pausada, confiante e com convicção, como quem compartilha uma inovação comprovada.
+
+Sincronia Labial: Perfeita e natural. Movimentos da boca devem corresponder exatamente aos fonemas da fala.
+
+Respiração: Leves e naturais pausas para respiração entre as frases ou palavras-chave, adicionando realismo.
+
+Detalhes Adicionais de Realismo e Atmosfera:
+
+Iluminação da Cena: Iluminação LED azul suave combinada com iluminação de estúdio profissional. Uma luz principal suave (softbox) vinda da frente e ligeiramente da lateral (key light) para iluminar o personagem. Uma luz de preenchimento (fill light) mais fraca para suavizar sombras. Luzes de recorte (rim lights) sutis em tons de ciano para destacar os contornos do personagem e separá-lo do fundo.
+
+Movimento da Câmera: Câmera estática, sem movimentos, para manter o foco absoluto na pessoa e no produto.
+
+Movimentos da Pessoa: Movimentos corporais mínimos e naturais enquanto fala: leves movimentos de cabeça para ênfase, microexpressões faciais que acompanham o tom da fala (ex: leve levantar de sobrancelhas ao expressar convicção). O movimento do peito ao respirar deve ser sutil.
+
+Qualidade Técnica: Resolução 4K. Áudio limpo, com a voz em primeiro plano, sem ruídos de fundo ou reverberação excessiva. Taxa de quadros de 24 ou 30fps para um look cinematográfico.
+
+Instruções Explícitas Adicionais para o Modelo de Vídeo:
+
+Áudio e Sincronia Labial: A fala deve ser clara, no tom descrito, e a sincronia labial, perfeita.
+
+Iluminação para Reflexos e Destaques: A iluminação da cena deve reforçar os contornos e profundidade do ambiente e do produto.
+
+Foco nos Detalhes do Personagem: Seguir as definições de gênero, idade, etnia, vestimenta e expressão para consistência.
+
+Realismo Extremo: O objetivo é um vídeo que pareça uma gravação real de alta qualidade.

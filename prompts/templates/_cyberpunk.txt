@@ -1,0 +1,20 @@
+# Template Cyberpunk
+
+Cena noturna em ambiente cyberpunk. Luzes de neon piscam em tons de azul, roxo e rosa. {personagem} {acao} pelas ruas molhadas de uma metrópole futurista. 
+
+Estilo visual: Blade Runner, Ghost in the Shell, Akira
+Movimento de câmera: Cinematográfico, dinâmico
+Duração: 8 segundos
+Proporção: 16:9
+
+Elementos visuais:
+- Chuva digital
+- Hologramas flutuantes
+- Arquitetura brutalista
+- Fumaça e névoa
+- Reflexos nas superfícies molhadas
+
+Variáveis:
+- {personagem}: Personagem principal (ex: gato, humano, robô)
+- {acao}: Ação principal (ex: correndo, lutando, dançando)
+- {ambiente}: Local específico (ex: rua, prédio, laboratório)

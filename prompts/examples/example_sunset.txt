@@ -1,0 +1,10 @@
+# Exemplo: Pôr do Sol
+
+Um pôr do sol espetacular sobre montanhas nevadas. O sol dourado se põe lentamente atrás dos picos, criando silhuetas dramáticas contra o céu em tons de laranja, rosa e roxo. 
+
+Nuvens esparsas são iluminadas por baixo, criando um efeito de fogo no céu. A câmera faz um movimento suave de pan da esquerda para a direita, revelando a vastidão da paisagem montanhosa.
+
+Estilo visual: Cinematográfico, documentário
+Movimento de câmera: Pan suave, 30 segundos
+Duração: 8 segundos
+Proporção: 16:9

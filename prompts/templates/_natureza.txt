@@ -1,0 +1,21 @@
+# Template Natureza
+
+Paisagem natural deslumbrante com {elemento_principal} em primeiro plano. {condicao_climatica} cria uma atmosfera {humor} e {iluminacao}.
+
+Estilo visual: Documentário da National Geographic, BBC Earth
+Movimento de câmera: Suave, panorâmico
+Duração: 8 segundos
+Proporção: 16:9
+
+Elementos visuais:
+- Texturas naturais detalhadas
+- Jogos de luz e sombra
+- Movimento orgânico
+- Cores vibrantes e saturadas
+- Profundidade de campo
+
+Variáveis:
+- {elemento_principal}: Foco principal (ex: montanha, oceano, floresta)
+- {condicao_climatica}: Condição do tempo (ex: sol poente, chuva leve, neblina)
+- {humor}: Atmosfera (ex: serena, dramática, misteriosa)
+- {iluminacao}: Tipo de luz (ex: dourada, azulada, prateada)
