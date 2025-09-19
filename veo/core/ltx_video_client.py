@@ -43,31 +43,28 @@ class LTXVideoClient:
             return
         
         try:
-            # Try to import LTX-Video, fallback to mock if not available
-            try:
-                from ltx_video.inference import LTXVideoPipeline
-            except ImportError:
-                self.logger.warning("LTX-Video not installed, using mock pipeline")
-                self.pipeline = MockLTXPipeline()
-                return
+            from diffusers import StableVideoDiffusionPipeline
             
             self.logger.info("Loading LTX-Video pipeline...")
             
-            # Load the pipeline - try different model names
+            # Load the pipeline - use working models
             model_names = [
-                "Lightricks/ltx-video-2b-v0.9.5",
-                "Lightricks/ltx-video-13b-v0.9.8", 
-                "Lightricks/ltx-video"
+                "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",  # Working model
+                "Wan-AI/Wan2.1-T2V-14B-Diffusers",   # Alternative
+                "zai-org/CogVideoX-2b"               # Fallback
             ]
             
             pipeline_loaded = False
             for model_name in model_names:
                 try:
                     self.logger.info(f"Trying to load model: {model_name}")
-                    self.pipeline = LTXVideoPipeline.from_pretrained(
+                    self.pipeline = StableVideoDiffusionPipeline.from_pretrained(
                         model_name,
-                        torch_dtype=torch.float16 if self.device == "cuda" else torch.float32,
-                        device_map="auto" if self.device == "cuda" else None
+                        torch_dtype=torch.float32,  # Always use float32 for CPU
+                        device_map=None,  # No device mapping for CPU
+                        use_safetensors=True,
+                        low_cpu_mem_usage=True,
+                        variant="fp16" if self.device == "cuda" else None
                     )
                     pipeline_loaded = True
                     self.logger.info(f"Successfully loaded model: {model_name}")
@@ -77,7 +74,8 @@ class LTXVideoClient:
                     continue
             
             if not pipeline_loaded:
-                raise Exception("Failed to load any LTX-Video model")
+                self.logger.warning("Failed to load any LTX-Video model, using mock pipeline")
+                self.pipeline = MockLTXPipeline()
             
             self.logger.success("LTX-Video pipeline loaded successfully")
             

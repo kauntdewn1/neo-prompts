@@ -62,10 +62,10 @@ def generate(
         else:
             config = VEOConfig.from_env()
         
-        # Validate API key
-        if not config.api_key:
-            console.print("[red]❌ Error: GOOGLE_API_KEY not found in environment variables[/red]")
-            console.print("Please set your API key: export GOOGLE_API_KEY=your_key_here")
+        # Validate Hugging Face token
+        if not config.huggingface_token:
+            console.print("[red]❌ Error: HUGGINGFACE_TOKEN not found in environment variables[/red]")
+            console.print("Please set your token: export HUGGINGFACE_TOKEN=your_token_here")
             raise typer.Exit(1)
         
         # Initialize generator
@@ -171,9 +171,9 @@ def batch(
         # Load configuration
         config = VEOConfig.from_env()
         
-        # Validate API key
-        if not config.api_key:
-            console.print("[red]❌ Error: GOOGLE_API_KEY not found in environment variables[/red]")
+        # Validate Hugging Face token
+        if not config.huggingface_token:
+            console.print("[red]❌ Error: HUGGINGFACE_TOKEN not found in environment variables[/red]")
             raise typer.Exit(1)
         
         # Load prompts
@@ -279,9 +279,10 @@ def config():
         config_table.add_column("Setting", style="cyan")
         config_table.add_column("Value", style="green")
         
-        config_table.add_row("API Key", "***" + config.api_key[-4:] if config.api_key else "Not set")
-        config_table.add_row("Project ID", config.project_id or "Not set")
-        config_table.add_row("Region", config.region)
+        config_table.add_row("Hugging Face Token", "***" + config.huggingface_token[-4:] if config.huggingface_token else "Not set")
+        config_table.add_row("Device", config.device)
+        config_table.add_row("Low Memory", str(config.low_memory))
+        config_table.add_row("Quality", config.quality)
         config_table.add_row("Model", config.model)
         config_table.add_row("Default Aspect Ratio", config.default_aspect_ratio.value)
         config_table.add_row("Default Duration", f"{config.default_duration}s")

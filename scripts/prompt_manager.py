@@ -224,12 +224,33 @@ def main():
         
         elif args.command == "generate":
             prompt_file = Path(args.prompt_file)
+            
+            # Add .txt extension if not present
+            if not prompt_file.suffix:
+                prompt_file = prompt_file.with_suffix('.txt')
+            
             if not prompt_file.is_absolute():
                 # Check if it's already a relative path from prompts/
                 if prompt_file.parts[0] == "prompts":
                     prompt_file = project_root / prompt_file
                 else:
-                    prompt_file = project_root / "prompts" / prompt_file
+                    # Try different possible paths
+                    possible_paths = [
+                        project_root / "prompts" / prompt_file,
+                        project_root / "prompts" / "projects" / prompt_file,
+                        project_root / "prompts" / "templates" / prompt_file,
+                        project_root / "prompts" / "examples" / prompt_file
+                    ]
+                    
+                    # Find the first existing path
+                    prompt_file = None
+                    for path in possible_paths:
+                        if path.exists():
+                            prompt_file = path
+                            break
+                    
+                    if prompt_file is None:
+                        raise FileNotFoundError(f"Prompt file not found: {args.prompt_file}")
             
             video_paths = manager.generate_from_prompt(
                 prompt_file,

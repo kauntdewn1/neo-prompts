@@ -6,12 +6,10 @@ import asyncio
 import time
 from typing import List, Optional, Dict, Any
 from pathlib import Path
-import google.generativeai as genai
-from loguru import logger
 
 from ..models.config import VEOConfig, VideoRequest
 from ..utils.logger import get_logger
-from .veo_api import VEOAPIClient
+from .video_generator_api import VideoGeneratorAPI
 
 
 class VEOClient:
@@ -29,8 +27,8 @@ class VEOClient:
         self.config = config
         self.logger = get_logger("veo.client")
         
-        # Initialize real VEO API client
-        self.api_client = VEOAPIClient(config)
+        # Initialize video generation API
+        self.api_client = VideoGeneratorAPI(config)
         
         self.logger.info(f"VEO client initialized with model: {config.model}")
     

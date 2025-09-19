@@ -29,24 +29,25 @@ class PersonGeneration(str, Enum):
 class VEOConfig(BaseModel):
     """Main configuration for VEO client."""
     
-    # API Configuration
-    api_key: str = Field(..., description="Google API key")
-    project_id: Optional[str] = Field(None, description="Google Cloud project ID")
-    region: str = Field("us-central1", description="Google Cloud region")
+    # Hugging Face Configuration
+    huggingface_token: Optional[str] = Field(None, description="Hugging Face token")
     
     # Model Configuration
-    model: str = Field("veo-3.0-generate-preview", description="VEO model to use")
+    model: str = Field("Wan-AI/Wan2.1-T2V-1.3B-Diffusers", description="Video generation model to use")
+    device: str = Field("auto", description="Device to use (cuda, cpu, auto)")
+    low_memory: bool = Field(True, description="Use low memory mode")
+    quality: str = Field("high", description="Generation quality (high, medium, low)")
     
     # Default Settings
     default_aspect_ratio: AspectRatio = Field(AspectRatio.LANDSCAPE, description="Default aspect ratio")
-    default_duration: int = Field(8, ge=5, le=8, description="Default duration in seconds")
+    default_duration: int = Field(8, ge=1, le=8, description="Default duration in seconds")
     default_number_of_videos: int = Field(1, ge=1, le=4, description="Default number of videos")
     default_person_generation: PersonGeneration = Field(PersonGeneration.ALLOW_ADULT, description="Default person generation")
     
     # Performance Settings
     max_concurrent_operations: int = Field(3, ge=1, le=10, description="Max concurrent operations")
     retry_attempts: int = Field(3, ge=1, le=10, description="Number of retry attempts")
-    retry_delay: int = Field(30, ge=5, le=300, description="Delay between retries in seconds")
+    retry_delay: int = Field(30, ge=1, le=300, description="Delay between retries in seconds")
     
     # Output Settings
     output_dir: Path = Field(Path("output/videos"), description="Output directory for videos")
@@ -66,21 +67,22 @@ class VEOConfig(BaseModel):
     def from_env(cls) -> 'VEOConfig':
         """Create config from environment variables."""
         return cls(
-            api_key=os.getenv("GOOGLE_API_KEY", ""),
-            project_id=os.getenv("GOOGLE_CLOUD_PROJECT"),
-            region=os.getenv("GOOGLE_CLOUD_REGION", "us-central1"),
-            model=os.getenv("VEO_MODEL", "veo-3.0-generate-preview"),
-            default_aspect_ratio=AspectRatio(os.getenv("DEFAULT_ASPECT_RATIO", "16:9")),
-            default_duration=int(os.getenv("DEFAULT_DURATION", "8")),
-            default_number_of_videos=int(os.getenv("DEFAULT_NUMBER_OF_VIDEOS", "1")),
-            default_person_generation=PersonGeneration(os.getenv("DEFAULT_PERSON_GENERATION", "allow_adult")),
-            max_concurrent_operations=int(os.getenv("MAX_CONCURRENT_OPERATIONS", "3")),
-            retry_attempts=int(os.getenv("RETRY_ATTEMPTS", "3")),
-            retry_delay=int(os.getenv("RETRY_DELAY", "30")),
-            output_dir=Path(os.getenv("OUTPUT_DIR", "output/videos")),
-            gcs_bucket=os.getenv("GCS_BUCKET"),
-            log_level=os.getenv("LOG_LEVEL", "INFO"),
-            log_format=os.getenv("LOG_FORMAT", "text")
+            huggingface_token=os.getenv("HUGGINGFACE_TOKEN"),
+            model=os.getenv("VEO_MODEL", "Wan-AI/Wan2.1-T2V-1.3B-Diffusers"),
+            device=os.getenv("VEO_DEVICE", "auto"),
+            low_memory=os.getenv("VEO_LOW_MEMORY", "true").lower() == "true",
+            quality=os.getenv("VEO_QUALITY", "high"),
+            default_aspect_ratio=AspectRatio(os.getenv("VEO_DEFAULT_ASPECT_RATIO", "16:9")),
+            default_duration=int(os.getenv("VEO_DEFAULT_DURATION", "8")),
+            default_number_of_videos=int(os.getenv("VEO_DEFAULT_COUNT", "1")),
+            default_person_generation=PersonGeneration(os.getenv("VEO_PERSON_GENERATION", "allow_adult")),
+            max_concurrent_operations=int(os.getenv("VEO_MAX_CONCURRENT", "3")),
+            retry_attempts=int(os.getenv("VEO_RETRY_ATTEMPTS", "3")),
+            retry_delay=int(os.getenv("VEO_REQUEST_DELAY", "30")),
+            output_dir=Path(os.getenv("VEO_OUTPUT_DIR", "output/videos")),
+            gcs_bucket=os.getenv("VEO_GCS_BUCKET"),
+            log_level=os.getenv("VEO_LOG_LEVEL", "INFO"),
+            log_format=os.getenv("VEO_LOG_FORMAT", "text")
         )
 
 
@@ -92,7 +94,7 @@ class VideoRequest(BaseModel):
     
     # Video Settings
     aspect_ratio: AspectRatio = Field(AspectRatio.LANDSCAPE, description="Video aspect ratio")
-    duration: int = Field(8, ge=5, le=8, description="Video duration in seconds")
+    duration: int = Field(8, ge=1, le=8, description="Video duration in seconds")
     number_of_videos: int = Field(1, ge=1, le=4, description="Number of videos to generate")
     person_generation: PersonGeneration = Field(PersonGeneration.ALLOW_ADULT, description="Person generation setting")
     
