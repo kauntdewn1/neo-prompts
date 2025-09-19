@@ -158,7 +158,7 @@ make show-prompt PROMPT=prompts/examples/example_sunset.txt
 make create-prompt NAME="meu_prompt" CONTENT="Seu prompt aqui"
 
 # Gerar vídeo de prompt
-make generate-prompt PROMPT=prompts/examples/example_sunset.txt
+make generate-prompt PROMPT=prompts/projects/interbox_emotivo.txt
 
 # Gerar vídeos em lote
 make batch-prompts

@@ -1,44 +1,28 @@
-Título/Tipo de Vídeo: Vídeo ultrarrealista, close-up médio, qualidade cinematográfica profissional, com áudio em português do Brasil.
+Título/Tipo de Vídeo: História de superação, cena introdutória cinematográfica, estilo realista, close-up médio, qualidade cinematográfica profissional, com áudio em português do Brasil.
 
 Cena Geral:
 
-Ambiente interno de um escritório moderno e sofisticado, com iluminação controlada. Ao fundo, uma parede texturizada em tom cinza escuro fosco, com uma iluminação de destaque indireta em tom azul royal vinda de baixo ou lateralmente, criando um ambiente elegante e focado. O fundo deve ter um desfoque de profundidade (bokeh) suave, mas que ainda permita a percepção do ambiente profissional, garantindo que toda a atenção visual esteja na pessoa e, principalmente, no símbolo institucional da MG.
+Sala de TV simples e aconchegante, não luxuosa mas completa. Iluminação quente de fim de tarde (Golden Hour) vaza pela janela, refletindo em tons alaranjados no ambiente. A TV ao fundo acende suavemente, criando bokeh desfocado. O celular está sobre o braço de um sofá de tecido texturizado, cor neutra (bege/terracota), transmitindo conforto. O fundo deve ter um desfoque de profundidade (bokeh) suave, mas que ainda permita a percepção do ambiente doméstico, garantindo que toda a atenção visual esteja no celular e no HUD do WhatsApp.
 
 Personagem (Definido):
 
-Gênero: Masculino.
+Personagem não aparece diretamente nesta cena, apenas o ambiente sugere sua presença fora de quadro. A perspectiva é neutra, dando protagonismo ao celular.
 
-Idade Aparente: 38 anos.
+Elemento Visual do Produto:
 
-Etnia/Cor da Pele: Brasileiro, pardo claro.
+O celular está posicionado sobre o braço do sofá com um HUD em estilo WhatsApp com design de glassmorphism translúcido, levemente flutuante sobre o celular. O HUD inclui cabeçalho com foto de contato, nome salvo, ícone do WhatsApp e "agora", além de player de mensagem de voz com botão pause, barra vermelha em progresso, bolinha branca e ícone de microfone verde à direita.
 
-Textura da Pele: Realista, com poros visíveis sutilmente, sem imperfeições exageradas, aspecto saudável e bem cuidado. Um leve brilho natural na zona T, indicando pele real.
+Descrição do PRODUTO:
 
-Cabelo: Cabelo preto, curto, com corte social moderno e bem penteado, talvez com um leve brilho de produto finalizador discreto. Sem fios rebeldes.
-
-Olhos: Castanhos escuros, expressivos.
-
-Roupa: Camisa social de manga comprida, cor azul marinho profundo, de tecido de alta qualidade (algodão egípcio ou similar), perfeitamente passada, com os dois primeiros botões abertos (sem gravata). As mangas levemente dobradas até o antebraço de forma casual e elegante.
-
-Expressão e Postura: Expressão facial de confiança serena e orgulho genuíno. Um leve sorriso de canto de boca, quase imperceptível, transmitindo satisfação. Olha diretamente para a câmera, estabelecendo contato visual com o espectador. Postura ereta, ombros levemente para trás, transmitindo autoridade e segurança.
-
-Elemento Visual Institucional:
-
-O personagem está posicionado à frente a caixa textos na parede ao fundo com texto "GARANTIA para licitações."
-
-Descrição do TEXTO:
-
-Tipografia:"GARANTIA" em branco, fonte sans-serif bold, caixa alta.
-
-"PARA LICITAÇÕES" em branco, fonte leve e elegante, caixa alta, menor tamanho e maior espaçamento.
+Smartphone moderno (iPhone estilo atual, tela edge-to-edge), vibrando com notificação. Tela mostra detalhe de bloqueio com padrão geométrico. O HUD WhatsApp se sobrepõe como notificação ativa.
 
 Ação e Diálogo (COM ÁUDIO PRECISO):
 
-A pessoa, após um breve momento olhando para a câmera com a expressão descrita, começa a falar:
+Som ambiente: notificação de mensagem iOS padrão. Mensagem de voz começa a tocar:
 
-Fala: "Empresas estão ficando de fora de milhões em licitações por falta de seguro. Nós resolvemos isso." (Não é necessário legenda)
+Fala: "Mano, preciso te agradecer! Sabe aquela box que você sempre me fala para ir? Estive lá hoje!" (Não é necessário legenda)
 
-Áudio: Voz masculina clara, em tom médio-grave, com excelente dicção em português do Brasil (sotaque neutro/sudeste, se possível). A fala deve ser pausada, confiante e com convicção, como quem compartilha uma estratégia de sucesso comprovada.
+Áudio: Voz masculina jovem, tom emocionado mas esperançoso, com leve respiração inicial. A fala deve ser pausada, confiante e com convicção, como quem compartilha uma experiência transformadora.
 
 Sincronia Labial: Perfeita e natural. Movimentos da boca devem corresponder exatamente aos fonemas da fala.
 
@@ -46,20 +30,20 @@ Respiração: Leves e naturais pausas para respiração entre as frases ou palav
 
 Detalhes Adicionais de Realismo e Atmosfera:
 
-Iluminação da Cena: Iluminação de estúdio profissional. Uma luz principal suave (softbox) vinda da frente e ligeiramente da lateral (key light) para iluminar o personagem. Uma luz de preenchimento (fill light) mais fraca para suavizar sombras. Luzes de recorte (rim lights) sutis em tons de azul ou roxo para destacar os contornos do personagem e separá-lo do fundo.
+Iluminação da Cena: Golden Hour suave, volumétrica, preenchendo o ambiente. Uma luz principal suave vinda da janela para iluminar o celular. Uma luz de preenchimento mais fraca para suavizar sombras. Luzes de recorte sutis em tons dourados para destacar os contornos do celular e separá-lo do fundo.
 
-Movimento da Câmera: Câmera estática, sem movimentos, para manter o foco absoluto na pessoa. 
+Movimento da Câmera: Câmera lenta, levemente sobre o ombro, acompanhando o celular no braço do sofá, close cinematográfico em 85mm, foco no celular, fundo desfocado em bokeh.
 
-Movimentos da Pessoa: Movimentos corporais mínimos e naturais enquanto fala: leves movimentos de cabeça para ênfase, microexpressões faciais que acompanham o tom da fala (ex: leve levantar de sobrancelhas ao expressar convicção). O movimento do peito ao respirar deve ser sutil.
+Movimentos da Pessoa: Movimentos corporais mínimos e naturais enquanto fala: leves movimentos de cabeça para ênfase, microexpressões faciais que acompanham o tom da fala. O movimento do peito ao respirar deve ser sutil.
 
-Qualidade Técnica: Resolução 4K. Áudio limpo, com a voz em primeiro plano, sem ruídos de fundo ou reverberação excessiva. Taxa de quadros de 24 ou 30fps para um look cinematográfico.
+Qualidade Técnica: Render photoreal 8K, saída em 1080p, textura visível do tecido do sofá, reflexo realista na tela do celular. Áudio limpo, com a voz em primeiro plano, sem ruídos de fundo ou reverberação excessiva. Taxa de quadros de 24 ou 30fps para um look cinematográfico.
 
 Instruções Explícitas Adicionais para o Modelo de Vídeo:
 
 Áudio e Sincronia Labial: A fala deve ser clara, no tom descrito, e a sincronia labial, perfeita.
 
-Iluminação para Reflexos e Destaques: A iluminação da cena deve reforçar os contornos e profundidade do ambiente e do símbolo institucional.
+Iluminação para Reflexos e Destaques: A iluminação da cena deve reforçar os contornos e profundidade do ambiente e do celular.
 
-Foco nos Detalhes do Personagem: Seguir as definições de gênero, idade, etnia, vestimenta e expressão para consistência.
+Foco nos Detalhes do Produto: Seguir as definições do celular e HUD para consistência.
 
-Realismo Extremo: O objetivo é um vídeo que pareça uma gravação real de alta qualidade
+Realismo Extremo: O objetivo é um vídeo que pareça uma gravação real de alta qualidade, com atmosfera que transmita intimidade, expectativa e proximidade emocional.
